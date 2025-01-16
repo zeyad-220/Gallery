@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #e1d8e2;
+            color: rgb(3, 3, 3);
+            padding: 20px;
+            text-align: center;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .certificate {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+        .certificate img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease-in-out;
+        }
+        .certificate:hover img {
+            transform: scale(1.1);
+        }
+        
+        .popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        .popup img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 10px;
+        }
+        .popup:target {
+            display: flex;
+        }
+        footer {
+            background: #e1d8e2;
+            text-align: center;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MY Certificates</h1>
+        <p>Press To View/Close</p>
+    </header>
+    <section class="gallery">
+        
+        <div class="certificate">
+            <a href="#popup1"><img src="certificate1.png" alt="شهادة 1"></a>
+        </div>
+        <div class="certificate">
+            <a href="#popup2"><img src="certificate2.png" alt="شهادة 2"></a>
+        </div>
+        <div class="certificate">
+            <a href="#popup3"><img src="certificate3.png" alt="شهادة 3"></a>
+        </div>
+        <div class="certificate">
+            <a href="#popup4"><img src="certificate4.png" alt="شهادة 4"></a>
+        </div>
+        <div class="certificate">
+            <a href="#popup5"><img src="certificate5.png" alt="شهادة 5"></a>
+        </div>
+        <div class="certificate">
+            <a href="#popup6"><img src="certificate6.png" alt="شهادة 6"></a>
+        </div>
+        <div class="certificate">
+            <a href="#popup7"><img src="certificate7.png" alt="شهادة 7"></a>
+        </div>
+        <div class="certificate">
+            <a href="#popup8"><img src="certificate8.png" alt="شهادة 8"></a>
+        </div>
+        <div class="certificate">
+            <a href="#popup9"><img src="certificate9.png" alt="شهادة 9"></a>
+        </div>
+        <div class="certificate">
+            <a href="#popup10"><img src="certificate10.png" alt="شهادة 10"></a>
+        </div>
+        <div class="certificate">
+            <a href="#popup11"><img src="certificate11.png" alt="شهادة 11"></a>
+        </div>
+        <div class="certificate">
+            <a href="#popup12"><img src="certificate12.png" alt="شهادة 12"></a>
+        </div>
+        <div class="certificate">
+            <a href="#popup13"><img src="certificate13.png" alt="شهادة 13"></a>
+        </div>
+        <div class="certificate">
+            <a href="#popup14"><img src="certificate14.png" alt="شهادة 14"></a>
+        </div>
+        <div class="certificate">
+            <a href="#popup15"><img src="certificate15.png" alt="شهادة 15"></a>
+        </div>
+        <div class="certificate">
+            <a href="#popup16"><img src="certificate16.png" alt="شهادة 16"></a>
+        </div>
+        <div class="certificate">
+            <a href="#popup17"><img src="certificate17.png" alt="شهادة 17"></a>
+        </div>
+        <div class="certificate">
+            <a href="#popup18"><img src="certificate18.png" alt="شهادة 18"></a>
+        </div>
+        <div class="certificate">
+            <a href="#popup19"><img src="certificate19.png" alt="شهادة 19"></a>
+        </div>
+    </section>
+
+   
+    <div id="popup1" class="popup">
+        <a href="#!"><img src="certificate1.png" alt="شهادة 1"></a>
+    </div>
+    <div id="popup2" class="popup">
+        <a href="#!"><img src="certificate2.png" alt="شهادة 2"></a>
+    </div>
+    <div id="popup3" class="popup">
+        <a href="#!"><img src="certificate3.png" alt="شهادة 3"></a>
+    </div>
+    <div id="popup4" class="popup">
+        <a href="#!"><img src="certificate4.png" alt="شهادة 4"></a>
+    </div>
+    <div id="popup5" class="popup">
+        <a href="#!"><img src="certificate5.png" alt="شهادة 5"></a>
+    </div>
+    <div id="popup6" class="popup">
+        <a href="#!"><img src="certificate6.png" alt="شهادة 6"></a>
+    </div>
+    <div id="popup7" class="popup">
+        <a href="#!"><img src="certificate7.png" alt="شهادة 7"></a>
+    </div>
+    <div id="popup8" class="popup">
+        <a href="#!"><img src="certificate8.png" alt="شهادة 8"></a>
+    </div>
+    <div id="popup9" class="popup">
+        <a href="#!"><img src="certificate9.png" alt="شهادة 9"></a>
+    </div>
+    <div id="popup10" class="popup">
+        <a href="#!"><img src="certificate10.png" alt="شهادة 10"></a>
+    </div>
+    <div id="popup11" class="popup">
+        <a href="#!"><img src="certificate11.png" alt="شهادة 11"></a>
+    </div>
+    <div id="popup12" class="popup">
+        <a href="#!"><img src="certificate12.png" alt="شهادة 12"></a>
+    </div>
+    <div id="popup13" class="popup">
+        <a href="#!"><img src="certificate13.png" alt="شهادة 13"></a>
+    </div>
+    <div id="popup14" class="popup">
+        <a href="#!"><img src="certificate14.png" alt="شهادة 14"></a>
+    </div>
+    <div id="popup15" class="popup">
+        <a href="#!"><img src="certificate15.png" alt="شهادة 15"></a>
+    </div>
+    <div id="popup16" class="popup">
+        <a href="#!"><img src="certificate16.png" alt="شهادة 16"></a>
+    </div>
+    <div id="popup17" class="popup">
+        <a href="#!"><img src="certificate17.png" alt="شهادة 17"></a>
+    </div>
+    <div id="popup18" class="popup">
+        <a href="#!"><img src="certificate18.png" alt="شهادة 18"></a>
+    </div>
+    <div id="popup19" class="popup">
+        <a href="#!"><img src="certificate19.png" alt="شهادة 19"></a>
+    </div>
+    <footer>
+        <p>© 2025 Zeyad Gaber | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
